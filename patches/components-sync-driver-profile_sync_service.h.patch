@@ -1,8 +1,16 @@
 diff --git a/components/sync/driver/profile_sync_service.h b/components/sync/driver/profile_sync_service.h
-index 83a46645ee08815fe8f41da81d0a753480f8192e..cf720327932f3f2b300f1f5adb33b89d616ab6b0 100644
+index 83a46645ee08815fe8f41da81d0a753480f8192e..54a17b5bbbbe082737d7e542e10949b8bee31d6a 100644
 --- a/components/sync/driver/profile_sync_service.h
 +++ b/components/sync/driver/profile_sync_service.h
-@@ -254,6 +254,7 @@ class ProfileSyncService : public SyncService,
+@@ -106,6 +106,7 @@ class ProfileSyncService : public SyncService,
+   // Initializes the object. This must be called at most once, and
+   // immediately after an object of this class is constructed.
+   // TODO(mastiz): Rename this to Start().
++  virtual
+   void Initialize();
+ 
+   // SyncService implementation
+@@ -254,6 +255,7 @@ class ProfileSyncService : public SyncService,
  
    static std::string GenerateCacheGUIDForTest();
  
